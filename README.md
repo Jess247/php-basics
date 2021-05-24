@@ -24,3 +24,8 @@ This is PHP-101. Starting with the most basic fundamentals.
 
 Variables always begin with a $ followed by an underscore or a letter. After the underscore you can use numbers or other characters.
 Examples in variables.php
+
+## How use operators
+
+Operators are used for asignments, to perform mathematical calculations or for comparison.
+Exampes in operators.php
