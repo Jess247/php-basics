@@ -29,3 +29,9 @@ Examples in variables.php
 
 Operators are used for asignments, to perform mathematical calculations or for comparison.
 Exampes in operators.php
+
+# Different datatypes
+
+The different datatypes are integers, booleans, float and strings.
+
+Example in datatypes.php
