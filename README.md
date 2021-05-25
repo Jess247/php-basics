@@ -55,3 +55,9 @@ Widely used Escape Sequences in PHP
 - \r – For carriage return.
 
 Examples in escape-sequences.php
+
+# Herdoc
+
+Herdoc is used for more complex stringliterals which contain a lot of text and multible variables.
+
+Examples in herdoc.php
