@@ -4,21 +4,21 @@ This is PHP-101. Starting with the most basic fundamentals.
 
 - How to declare variables
 - How to use operators
-  ** Arithmetic operators
-  ** Combining operators
-  \*\* Use increment and decrement operators
+  - Arithmetic operators
+  - Combining operators
+  - Use increment and decrement operators
 - Different datatypes
-  ** Boolean
-  ** Integer
-  ** Floats
-  ** Strings
+  - Boolean
+  - Integer
+  - Floats
+  - Strings
 - Variable Interpolation
 - Escape-Sequences
 - Herdoc
 - Nowdoc
 - How to declare constants
 - predefined constants
-  \*\* magic constants
+- magic constants
 
 ## How to declare variables
 
