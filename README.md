@@ -35,3 +35,23 @@ Exampes in operators.php
 The different datatypes are integers, booleans, float and strings.
 
 Example in datatypes.php
+
+# Variable Interpolation
+
+They can be used to output the value of a variable along with other text. The '.' operator is used for interpolation.
+
+Example in var-interpolation.php
+
+# Escape-Sequences
+
+Widely used Escape Sequences in PHP
+
+- \' – To escape ' within single quoted string.
+- \” – To escape “ within double quoted string.
+- \\ – To escape the backslash.
+- \$ – To escape $.
+- \n – To add line breaks between string.
+- \t – To add tab space.
+- \r – For carriage return.
+
+Examples in escape-sequences.php
