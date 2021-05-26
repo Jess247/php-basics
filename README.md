@@ -56,8 +56,14 @@ Widely used Escape Sequences in PHP
 
 Examples in escape-sequences.php
 
-# Herdoc
+# Heredoc
 
-Herdoc is used for more complex stringliterals which contain a lot of text and multible variables.
+Heredoc is used for more complex stringliterals which contain a lot of text and multible variables.
 
-Examples in herdoc.php
+Examples in heredoc.php
+
+# Nowdoc
+
+It is basically the same as heredoc only without variable interpolation.
+
+Example in nowdoc.php
