@@ -32,4 +32,11 @@
     $mix = '<img src="www.img.com" width="50" height="50" alt"sample image">';
     $mix = "<img src=\"www.img.com\" width=\"50\" height=\"50\" alt\"sample image\">"; // also works 
 
+    // convert string to number
+    $price = '10.50';
+    Var_dump($price);
+    $amount = 70;
+    Var_dump($amount);
+    $price *= $amount;
+    Var_dump($price);
 ?>
