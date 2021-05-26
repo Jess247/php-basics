@@ -67,3 +67,11 @@ Examples in heredoc.php
 It is basically the same as heredoc only without variable interpolation.
 
 Example in nowdoc.php
+
+# Constants
+
+Constants store values just like variables the only diffrence is that the value cant be changed.
+Instead of using the $ the keyword const is used followed by the name. const CONSTNAME = value;
+An older way to define a constant is by using the constandefinition function define();
+
+Example in constants.php
