@@ -75,3 +75,10 @@ Instead of using the $ the keyword const is used followed by the name. const CON
 An older way to define a constant is by using the constandefinition function define();
 
 Example in constants.php
+
+# magic constants
+
+Magic constants are also predefined the reason their called magic is because their value depends on where it is used.
+They're written with two underscores in the front and back '**LINE**' for example.
+
+Example in constants.php
