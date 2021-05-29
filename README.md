@@ -58,7 +58,7 @@ Examples in escape-sequences.php
 
 # Heredoc
 
-Heredoc is used for more complex stringliterals which contain a lot of text and multible variables.
+Heredoc is used for more complex stringliterals which contain a lot of text and multiple variables.
 
 Examples in heredoc.php
 
@@ -70,9 +70,9 @@ Example in nowdoc.php
 
 # Constants
 
-Constants store values just like variables the only diffrence is that the value cant be changed.
+Constants store values just like variables the only difference is that the value cant be changed.
 Instead of using the $ the keyword const is used followed by the name. const CONSTNAME = value;
-An older way to define a constant is by using the constandefinition function define();
+An older way to define a constant is by using the constant definition function define();
 
 Example in constants.php
 
@@ -82,3 +82,9 @@ Magic constants are also predefined the reason their called magic is because the
 They're written with two underscores in the front and back '**LINE**' for example.
 
 Example in constants.php
+
+# Comparison operators
+
+They are used to compare values and return true or false. Operators are ==, ===, !0 (or <>), !==, <, <=, >, >=.
+
+
