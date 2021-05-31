@@ -32,13 +32,17 @@
     var_dump($result);
     echo "<br/>";
 
-    echo "'or' Example 3: ";
+    echo "'or' Example 4: ";
     $result = $num1 <= $num2 or $num1 == 10;
     var_dump($result);
     
     $result = $num1 <= $num2 or $num2 == 10;
     var_dump($result);
 
+    // ! not
+    echo "! Example 5: ";
+    $result = !($num1 <= $num2) && $num1 == 10; // example 1 with logical operator "!"
+    var_dump($result);
     
 
 ?>
