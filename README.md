@@ -87,4 +87,9 @@ Example in constants.php
 
 They are used to compare values and return true or false. Operators are ==, ===, !0 (or <>), !==, <, <=, >, >=.
 
+# Logic Operators
+
+The word or symbol is used to connect two or more expressions. The result is either true or false.
+"and", "or", "xor", !, &&, ||. 
+
 
