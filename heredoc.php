@@ -1,7 +1,7 @@
 <?php
 
 $breed = "Border Collie";
-$type = "scotish";
+$type = "scottish";
 $weight = "22 kg";
 $height = "50 cm";
 
