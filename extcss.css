@@ -1,0 +1,16 @@
+.blueGreen {
+    background: green;
+    border: 1px solid blue;
+    color: blue;
+}
+
+.blackYellow {
+    background: yellow;
+    border: 1px solid black;
+    color: black;
+}
+
+.whiteRed {
+    background: red;
+    color: white;
+}
