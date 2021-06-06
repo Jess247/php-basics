@@ -1,6 +1,6 @@
 <?php
     $gameOver = false; // boolean - true or false
-    $score = 1234; // integer -  positiv or negativ number
+    $score = 1234; // integer -  positive or negative number
     $circleRatio = 3.14; // float 
     $player = "Jess"; // String
 
@@ -15,9 +15,9 @@
     $floatNum2 = 4e-4; // 0.0004
 
     $num = 10;
-    Var_dump($num); // a function that outputs the Datatyp of the variable
+    Var_dump($num); // a function that outputs the Datatype of the variable
     $num += 1.52;
-    Var_dump($num); // integers can be turned into floats but not the otherway around 
+    Var_dump($num); // integers can be turned into floats but not the other way around 
     $num -= .52;
     Var_dump($num); // will still be a float 
 

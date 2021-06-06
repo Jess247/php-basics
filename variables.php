@@ -9,7 +9,7 @@
     $Pet;
 
     // initialize variables
-    $firstname = "Jess"; 
+    $firstName = "Jess"; 
     $age = 28;
     $ageInTwoYears = $age + 2; // outputs 30
 ?>
