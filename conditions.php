@@ -48,8 +48,48 @@ if($age > 18){
 // Switch case
 $weekday = 3;
 switch ($weekday) {
+    case 0:
+        $day = "Sunday";
+        break;
+    case 1:
+        $day = "Monday";
+        break;
+    case 2:
+        $day = "Tuseday";
+        break;
+    case 3:
+        $day = "Wednesday";
+        break;
+    case 4:
+        $day = "Thursday";
+        break;
+    case 5:
+        $day = "Friday";
+        break;
+    case 6:
+        $day = "Saturday";
+        break;
+}
+
+echo "Today is $day";
+
+// nested Switch case
+$weekday = 3;
+switch ($weekday) {
     case 0;
         $day = "Sunday";
+        switch ($time){
+            case "morning";
+            $task = "Drink coffee";
+            break;
+            case "noon";
+            $task = "Eat Lunch";
+            break;
+            case "evening";
+            $task = "Go to bed";
+            break;
+        }
+        echo "it is $time. $task";
         break;
     case 1;
         $day = "Monday";
@@ -66,7 +106,7 @@ switch ($weekday) {
     case 5;
         $day = "Friday";
         break;
-    case 6;
+    case 6:
         $day = "Saturday";
         break;
 }
