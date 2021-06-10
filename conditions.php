@@ -26,13 +26,13 @@ $age = 39;
 
 if($age > 18) {
     if($age < 30) {
-        echo "You arent 30 yet!"
+        echo "You arent 30 yet!";
     }
 }
 
 //  better practice in this case would be
 if($age > 18 && $age < 30) {
-        echo "You arent 30 yet!"
+        echo "You arent 30 yet!";
 }
 
 // elseif
@@ -44,5 +44,33 @@ if($age > 18){
 } else {
     echo "You are older than 30";
 }
+
+// Switch case
+$weekday = 3;
+switch ($weekday) {
+    case 0;
+        $day = "Sunday";
+        break;
+    case 1;
+        $day = "Monday";
+        break;
+    case 2;
+        $day = "Tuseday";
+        break;
+    case 3;
+        $day = "Wednesday";
+        break;
+    case 4;
+        $day = "Thursday";
+        break;
+    case 5;
+        $day = "Friday";
+        break;
+    case 6;
+        $day = "Saturday";
+        break;
+}
+
+echo "Today is $day";
 
 ?>
