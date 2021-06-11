@@ -113,4 +113,13 @@ switch ($weekday) {
 
 echo "Today is $day";
 
+// examples
+
+$num1 = 14;
+$num2 = 55;
+
+if($num1 < $num2){
+    echo "{$num1} hat den wert $num1. {$num2} hat den Wert $num2 und ist somit groesser";   
+}
+
 ?>
