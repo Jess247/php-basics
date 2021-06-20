@@ -57,9 +57,12 @@
 
     // accessing elements
     echo $countryCode["Australia"];
-    echo "variable interpolation does not work with array, you need to wrap the array in curly brackets! <br/> The Country code of Australia is: {$countryCode["Australia"]}";
+    echo "variable interpolation does not work with array, you need to wrap the array in curly brackets! <br/> The Country code of Australia is: {$countryCode["Australia"]} <br/>";
 
-
+    // pre defined arrays
+     foreach($_SERVER as $key=>$value) {
+         echo "<p>Key: $key has the value $value</p>";
+     }
 
 
 
