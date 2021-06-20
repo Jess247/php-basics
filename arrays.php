@@ -41,6 +41,24 @@
         }
     }
     var_dump($evenNumbers);
+    echo "<br/>";
+
+    // associative array
+    $countryCode = [];
+    $countryCode["Australia"] = "AUS";
+    $countryCode["Sri Lanka"] = "CL";
+    $countryCode["Fiji"] = "FJI";
+    $countryCode["Germany"] = "GER";
+
+    var_dump($countryCode);
+    echo "<br/>";
+    print_r($countryCode); 
+    echo "<br/>";
+
+    // accessing elements
+    echo $countryCode["Australia"];
+    echo "variable interpolation does not work with array, you need to wrap the array in curly brackets! <br/> The Country code of Australia is: {$countryCode["Australia"]}";
+
 
 
 
