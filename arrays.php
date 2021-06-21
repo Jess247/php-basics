@@ -81,5 +81,38 @@
     }
     echo "</ol>";
 
+    // Multidimensional arrays
+    $members = array(
+        array("Mrs", "Gabriela", "Lopez", "Soccer", "active"),
+        array("Mr", "Sam", "Smith", "Football", "passive"),
+        array("Mrs", "Tina", "Mitchel", "Track", "active"),
+        array("Mrs", "Julia", "Anderson", "Swimming", "active"),
+    );
+
+    print_r($members);
+    echo "<br/>";
+    // alternative way
+    $members = [
+        ["Mrs", "Gabriela", "Lopez", "Soccer", "active"],
+        ["Mr", "Sam", "Smith", "Football", "passive"],
+        ["Mrs", "Tina", "Mitchel", "Track", "active"],
+        ["Mrs", "Julia", "Anderson", "Swimming", "active"],
+    ];
+
+    // access elements
+    $name = $members[0][1];
+    echo $name;
+
+    foreach($members as $key => $value){
+        echo "<h3>Member Number: ".($key + 1)."</h3>";
+        if(is_array($value)){
+            echo "<p>";
+            foreach($value as $innerValue) {
+            echo $innerValue .", ";
+            }
+            echo "</p>";
+        }
+    }
+
 
 ?>
