@@ -91,4 +91,25 @@
     foreach($strArr as $str) {
         echo "<p>The string \"$str\" is ".strlen($str)." characters long!</p>";
     }
+
+    // access single characters from a sting
+    foreach($strArr as $str) {
+        $vowls = ["a", "e", "i", "o", "u"];
+        $counter = 0;
+        for($i = 0; $i < strlen($str); $i++){
+            if(in_array($str[$i], $vowls)) {
+                $counter++;
+            }
+        }
+        echo "<p>The string \"$str\" contains $counter vowl(s)</p>";
+    }
+
+    // check if a string is lower or uppercase
+    $low = "THIS STRING WILL BE IN LOWER CASE!";
+    $up = "this will be uppercase";
+
+    echo '<p>Now '.strtolower($low).' and '. strtoupper($up). ' !</p>';
+
+    
+
 ?>
