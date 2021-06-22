@@ -21,5 +21,26 @@
     // also works with calculations
     echo "<p>The highest value of (22*23), (14*43), (15*24), (46*7), 2, (23*27) is: ".max((22*23), (14*43), (15*24), (46*7), 2, (23*27)). "!!</p><br/>";
     
+    // count() counts the elements of an array
+    $oddNums = [];
+    $elements = 0;
 
+    for($i = 1; $i <= 100; $i++){
+        if($i % 2 != 0){
+            $oddNums[$elements] = $i;
+            $elements++;
+        }
+    }
+
+    echo '<p>The Array $oddNums contains '.count($oddNums).' elements.</p><br/>';
+
+    // recursive count
+    $members = [
+        ["Mrs", "Gabriela", "Lopez", "Soccer", "active"],
+        ["Mr", "Sam", "Smith", "Football", "passive"],
+        ["Mrs", "Tina", "Mitchel", "Track", "active"],
+        ["Mrs", "Julia", "Anderson", "Swimming", "active"],
+    ];
+    echo '<p>One dimensional: '.count($members).'</p>';
+    echo '<p>Multi dimensional: '.count($members, COUNT_RECURSIVE).'</p>';
 ?>
