@@ -43,4 +43,28 @@
     ];
     echo '<p>One dimensional: '.count($members).'</p>';
     echo '<p>Multi dimensional: '.count($members, COUNT_RECURSIVE).'</p>';
+
+    // Shuffle - shuffles elements of an array randomly
+    $evenNumbers = [];
+    $element = 0;
+
+    for($i = 1; $i <= 10; $i++){
+        if($i % 2 == 0){
+            $evenNumbers[$element] = $i;
+            $element++;
+        }
+    }
+    echo "<ol>";
+    foreach($evenNumbers as $key=>$value) {
+        echo "<li>The Element with the index $key has the value <b>$value</b></li>";
+    }
+    echo "</ol>";
+    echo "Let's shuffle!";
+    if(shuffle($evenNumbers)){
+        echo "<ol>";
+        foreach($evenNumbers as $key=>$value){
+            echo "<li>The element with the index $key has the value <b>$value</b></li>";
+        }
+        "</ol>";
+    }
 ?>
