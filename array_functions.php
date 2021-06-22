@@ -77,4 +77,18 @@
     $reversed = array_reverse($str);
     echo "<hr/>";
     print_r($reversed);
+    echo "<br/>";
+
+    // get the length of a string 
+    $str = "Hello World!";
+    echo strlen($str);
+
+    $strArr = [
+        "Medium length string",
+        "I am a longer string, count how long I am!",
+        "I am short"
+    ];
+    foreach($strArr as $str) {
+        echo "<p>The string \"$str\" is ".strlen($str)." characters long!</p>";
+    }
 ?>
