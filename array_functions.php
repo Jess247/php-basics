@@ -44,7 +44,7 @@
     echo '<p>One dimensional: '.count($members).'</p>';
     echo '<p>Multi dimensional: '.count($members, COUNT_RECURSIVE).'</p>';
 
-    // Shuffle - shuffles elements of an array randomly
+    // Shuffle - shuffles elements of an array randomly (function returns true or false)
     $evenNumbers = [];
     $element = 0;
 
@@ -67,4 +67,14 @@
         }
         "</ol>";
     }
+
+    // array_reverse()
+    $str = [
+        "endOfStr" => "world!",
+        "begOfStr" => "Hello"
+    ];
+    print_r($str);
+    $reversed = array_reverse($str);
+    echo "<hr/>";
+    print_r($reversed);
 ?>
