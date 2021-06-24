@@ -110,6 +110,28 @@
 
     echo '<p>Now '.strtolower($low).' and '. strtoupper($up). ' !</p>';
 
-    
+    // string to an array and from array to string
+    // in this example we will count to words of the $murphy array. We will than shuffle the words and bring them back into an array
+    $murphy = [
+        "Wenn etwas schiefgehen kann, dann wird es auch schiefgehen.",
+        "Die andere Schlange kommt stehts schneller voran.",
+        "Ein Computerprogramm tut was man schreibt, nicht was man will."
+    ];
+    // turn array strings into array of words and count them shuffle the words and put them into a strings (murphy will be an array of 3 strings still)
+    foreach($murphy as $i => $str){
+        $sArr = explode(" ", $str);
+        $words = count($sArr);
+        // printf is used for formatted strings. %s is a placeholder for a string and %d is a placeholder for a decimal
+        printf("Der Satz: \"%s\" besteht aus %d Wörtern. <br/>", $str, $words);
+        shuffle($sArr);
+        $murphy[$i] = implode(" ", $sArr);
+    }
+    print_r($murphy);
+    echo "<br/>";
+
+    // Multi byte string functions use the prefix mb_ -> mb_strlen($string)
+    mb_internal_encoding();
+
+
 
 ?>
