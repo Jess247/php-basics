@@ -21,6 +21,18 @@
             ?>
         </tr>
     </thead>
+    <tbody>
+            <?php
+                    for($i = 1; $i <= 10; $i++){
+                        echo "<tr><th>$i</th>";
+                        for($j = 1; $j <= 10; $j++){
+                            $sum = $j*$i;
+                            echo "<td>$sum</td>";
+                        }
+                        echo "</tr>\n";
+                    }
+            ?>
+    </tbody>
 </table>    
 </body>
 </html>
