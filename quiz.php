@@ -8,19 +8,19 @@
 </head>
 <body>
 <h1>Basic multiplications</h1>
-<?php
-    echo "<table cellspacing = '10'>\n";
-    for($i = 1; $i <= 10; $i++){
-        if($i == 1) {
-            echo "<tr><th>*</th>";
-        }
-        echo "<th>$i</th>\t";
-        if($i == 10){
-            echo "</tr>";   
-        }
-        echo "<tr><th>$i</th></tr>";
-    }
-?>
-    
+<table cellpadding ="10">
+    <thead>
+        <tr>
+            <?php
+                for($i = 1; $i <= 10; $i++){
+                    if($i == 1){
+                      echo "<th>*</th>";
+                    }
+                    echo "<th>$i</th>";
+                }
+            ?>
+        </tr>
+    </thead>
+</table>    
 </body>
 </html>
