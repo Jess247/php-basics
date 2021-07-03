@@ -9,21 +9,27 @@
 <body>
     <h1>Lottozahlen</h1>
     <?php
+// example 1
+// check for duplicates
+echo "Die gezogenen Zahlen sind: ";
+for($i = 0; $i < 6; $i++){
+    $numbers[$i] = mt_rand(1, 49);
+}
+$numbers = array_unique($numbers);
+for($i = 0; $i < 6; $i++){
+    echo $numbers[$i]. " ,";
+}
+// example 2
+    echo "<br/> Die gezogenen Zahlen sind: ";
+        $numbers = range(1, 49);
+        shuffle($numbers);
+        for($i = 0; $i < 6; $i++){
+            echo "$numbers[$i], ";
+        }
 
-    echo "Die gezogenen Zahlen sind: ";
-    $gezogen = 0;
-    $lottozahen = [];
-        while($gezogen < 6) {
-            $lottozahen[] = mt_rand(1,49);
-            echo $lottozahen.", ";
-            //shuffle numbers
-            echo $lottozahen.", ";
-            $gezogen++;
-        }
-        if(shuffle($lottozahen)) {
-                echo "$lottozahen";
-        }
         
+// output biggest num of array
+        echo "Die groesste Zahl ist: ".max($numbers);
     ?>
 </body>
 </html>
