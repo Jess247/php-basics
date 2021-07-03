@@ -7,7 +7,7 @@
     <title>Multiplications</title>
 </head>
 <body>
-<h1>Basic multiplications</h1>
+<h1>Das kleine 1 mal 1</h1>
 <table cellpadding ="10">
     <thead>
         <tr>
