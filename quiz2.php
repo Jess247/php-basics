@@ -12,13 +12,13 @@
 // example 1
 // check for duplicates
 echo "Die gezogenen Zahlen sind: ";
-for($i = 0; $i < 6; $i++){
-    $numbers[$i] = mt_rand(1, 49);
+$gezogen = [];
+while( count($gezogen) < 6 ){
+    $lottozahlen = mt_rand(1,49);
+    $gezogen[$lottozahlen] = $lottozahlen;
+    echo $gezogen[$lottozahlen].", ";
 }
-$numbers = array_unique($numbers);
-for($i = 0; $i < 6; $i++){
-    echo $numbers[$i]. " ,";
-}
+
 // example 2
     echo "<br/> Die gezogenen Zahlen sind: ";
         $numbers = range(1, 49);
