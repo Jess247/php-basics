@@ -8,7 +8,7 @@
 </head>
 <body>
 <h1>Das kleine 1 mal 1</h1>
-<table cellpadding ="10">
+<table cellspacing ="10">
     <thead>
         <tr>
             <?php
