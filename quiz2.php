@@ -22,9 +22,11 @@ while( count($gezogen) < 6 ){
 // example 2
     echo "<br/> Die gezogenen Zahlen sind: ";
         $numbers = range(1, 49);
+        $chosenNumbers = [];
         shuffle($numbers);
         for($i = 0; $i < 6; $i++){
             echo "$numbers[$i], ";
+            $chosenNumbers[$i] = $numbers[$i];
         }
 
         
