@@ -87,6 +87,26 @@
     // function with token
     calcSumThree(1,3,4,5,6,3,5);
 
+    // scope and global variables
+    function calc(...$num) {
+        global $result;
+        foreach($num as $value) {
+            $result += $value;
+        }
+    }
+    $result = 0;
+    calc(1,4,5,7,3,5,4,3);
+    echo "<p>$result</p>\n";
+
+    // associative array $GLOBAL
+    function addNums(... $num) {
+        foreach($num as $value){
+            $GLOBALS[$sumTwo] += $value;
+        }
+    }
+    $sumTwo = 0;
+    addNums(3,5,2,4,5,6,7);
+    echo "<p>$sumTwo</p>";
     ?>
 </body>
 </html>
