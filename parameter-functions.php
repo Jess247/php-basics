@@ -139,7 +139,6 @@
     $sum = add(array(1,3,4,5,6,5,4,3));
     echo "<p>$sum</p>";
     ?>
-    ?>
     
 </body>
 </html>
