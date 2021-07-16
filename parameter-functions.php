@@ -60,8 +60,26 @@
             }
             echo "<p>$sum</p>\n";
         }
-    
-    ?>
+    // there are functions that pass arguments by value
+    function func_double($num) {
+        $num = $num * 2;
+        echo "<p>This is the value of the num variable out of the function: ".$num. "</p>\n";
+    }
+
+    // and functions that pass values by reference 
+    function func_doubleTwo(&$param) {
+        $param = $param * 2;
+    }
+
+    // function with return value and specific datatype
+    function add($num): int {
+        $sum = 0;
+        foreach($num as $value){
+            $sum += $value;
+        }
+        return $sum;
+    }
+?>
 
 </head>
 <body>
@@ -107,6 +125,21 @@
     $sumTwo = 0;
     addNums(3,5,2,4,5,6,7);
     echo "<p>$sumTwo</p>";
+
+    // functions by value
+    $num = 10;
+    func_double($num);
+    echo "<p>And this is the value of the variable outside of the function: $num</p>";
+
+    // because we used a reference in the function the value of $num will double because of the function doubleTwo
+    func_doubleTwo($num);
+    echo "<p>This is the value of the reference value of the function: $num</p>";
+    
+    // function with return value
+    $sum = add(array(1,3,4,5,6,5,4,3));
+    echo "<p>$sum</p>";
     ?>
+    ?>
+    
 </body>
 </html>
