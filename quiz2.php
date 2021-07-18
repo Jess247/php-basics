@@ -25,13 +25,11 @@ while( count($gezogen) < 6 ){
         $chosenNumbers = [];
         shuffle($numbers);
         for($i = 0; $i < 6; $i++){
-            echo "$numbers[$i], ";
-            $chosenNumbers[$i] = $numbers[$i];
+            echo $numbers[$i].", ";
+            $highestNumbers[$i] = $numbers[$i]; 
         }
-
-        
-// output biggest num of array
-        echo "Die groesste Zahl ist: ".max($numbers);
+        sort($highestNumbers);
+        echo "The highest number is: ".$highestNumbers[(count($highestNumbers)-1)];
     ?>
 </body>
 </html>
