@@ -29,7 +29,20 @@ while( count($gezogen) < 6 ){
             $highestNumbers[$i] = $numbers[$i]; 
         }
         sort($highestNumbers);
-        echo "The highest number is: ".$highestNumbers[(count($highestNumbers)-1)];
+        echo "The highest number is: ".$highestNumbers[(count($highestNumbers)-1)]."<br/>";
+
+        // highest number with loop
+        $arr = [5, 6, 23, 16, 42, 33];
+        $highest = 0;
+        for($i = 0; $i < count($arr); $i++){
+            echo "This is the $i element of the array: " .$arr[$i]. ", ";
+            if($highest < $arr[$i]){
+                $highest = $arr[$i];
+                // to demonstrate the changes of tha variable highest
+                echo "<p>$highest</p>";
+            }
+        }
+
     ?>
 </body>
 </html>
