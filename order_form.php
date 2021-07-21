@@ -11,14 +11,14 @@
 if(isset($_POST['starter'])) {
     $starter = $_POST['starter'];
     $mainDish = $_POST['main'];
-    $desert = $_POST['dessert'];
+    $dessert = $_POST['dessert'];
     $drinks = $_POST['drinks'];
     $guestStatus = $_POST['guestStatus'];
 } else {
     $starter = "";
     $mainDish = "";
     $dessert = "";
-    $drink = "";
+    $drinks = "";
     $guestStatus = "";
 }
 ?>
@@ -26,7 +26,7 @@ if(isset($_POST['starter'])) {
     <h2>Place your order</h2>
     <form action="" method="post">
         <label for="starter">Starter: </label>
-        <select id="starter" name="stater">
+        <select id="starter" name="starter">
             <option value="">Choose a starter</option>
             <option value="salat"<?php if($starter == 'salat'){echo 'selected';}?>>Salad</option>
             <option value="garlicBread"<?php if($starter == 'garlicBread'){echo 'selected';}?>>Garlic Bread</option>
@@ -68,7 +68,7 @@ if(isset($_POST['starter'])) {
             }?>/>
         </label>
         </br>
-        <label for="costumer">Costumer
+        <label for="guest">Costumer
             <input type="radio" name="guestStatus" id="guest" value="guest"<?php 
             if($guestStatus == "guest") {
                 echo "checked";
