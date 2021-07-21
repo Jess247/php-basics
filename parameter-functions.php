@@ -85,7 +85,7 @@
 <body>
     <h1>Functions with parameter</h1>
     <?php
-    // calling function
+    // calling function 
     $num = 4; 
     square(5);
     square($num);
