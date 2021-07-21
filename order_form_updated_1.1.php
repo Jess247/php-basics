@@ -17,9 +17,37 @@
         // is there is no text set the text to value
         if(empty($text)) {
             $text = $value;
-        }
+        } 
         $output .= ">$text</option>\n";
         echo $output;
+        
+        
+    }
+
+    function order() {
+        if($_POST["starter"] == ""
+        && $_POST["main"] == ""
+        && $_POST["dessert"] == ""
+        && $_POST["drinks"] == ""){
+            echo "<p>It looks like you didn't make a choice yet...</p>\n";
+        }else {
+            echo "<h3>Thanks for your order.</h3>\n";
+            echo "<p>You ordered: </p>\n";
+            echo "<ul>\n";
+            if($_POST["starter"] != ""){
+                echo "<li>Starter: {$_POST['starter']} </li>\n";
+            }
+            if($_POST["main"] != ""){
+                echo "<li>Main course: {$_POST['main']} </li>\n";
+            }
+            if($_POST["dessert"] != ""){
+                echo "<li>Dessert: {$_POST['dessert']} </li>\n";
+            }
+            if($_POST["drinks"] != ""){
+                echo "<li>Drinks: {$_POST['drinks']} </li>\n";
+            }
+            echo "</ul>\n";
+        }
     }
     ?>
 </head>
@@ -28,6 +56,7 @@
 
     if (isset($_POST["starter"])) {
         $gueststatus = $_POST["gueststatus"];
+        order();
     }
     else {
         $gueststatus = "";
@@ -40,6 +69,7 @@
             <label for="starter">Starter: </label>
             <select id="starter" name="starter">
                 <?php
+                setOption("starter","","none");
                 setOption("starter","salad","Salad");
                 setOption("starter","garlicbread","Garlic Bread");
                 setOption("starter","Olives","");
@@ -50,6 +80,7 @@
             <label for="main">Main Dish</label>
             <select id="main" name="main">
                 <?php
+                setOption("main","","none");
                 setOption("main","Pizza","");
                 setOption("main","Pasta","");
                 setOption("main","Risotto","");
@@ -60,16 +91,17 @@
             <label for="dessert">Dessert</label>
             <select id="dessert" name="dessert">
                 <?php
+                setOption("dessert","","none");
                 setOption("dessert","Cake","");
                 setOption("dessert","fruits","Fruits with Ice Cream");
                 setOption("dessert","mousse","Mousse au chocolat");
-                setOption("dessert","none","none");
                 ?>
             </select>
     </br>
             <label for="drinks">Drinks</label>
             <select id="drinks" name="drinks">
                 <?php
+                setOption("drinks","","none");
                 setOption("drinks","Water","");
                 setOption("drinks","Beer","");
                 setOption("drinks","Wine","");
