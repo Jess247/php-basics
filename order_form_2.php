@@ -2,129 +2,129 @@
 <html lang="de">
 <head>
 	<meta charset="utf-8" />
-	<title>Formulare auswerten</title>
+	<title>Form</title>
 </head>
 <body>
 <?php
-if (isset($_POST["vSpeise"])) {
-	$vSpeise = $_POST["vSpeise"];
-	$hSpeise = $_POST["hSpeise"];
-	$nSpeise = $_POST["nSpeise"];
-	$getraenk = $_POST["getraenk"];
-	$gastStatus = $_POST["gastStatus"];
+if (isset($_POST["starter"])) {
+	$starter = $_POST["starter"];
+	$main = $_POST["main"];
+	$dessert = $_POST["dessert"];
+	$drinks = $_POST["drinks"];
+	$guestStatus = $_POST["guestStatus"];
 }
 else {
-	$vSpeise = "";
-	$hSpeise = "";
-	$nSpeise = "";
-	$getraenk = "";
-	$gastStatus = "";
+	$starter = "";
+	$main = "";
+	$dessert = "";
+	$drinks = "";
+	$guest = "";
 }
 ?>
 
-<h1>Kantinenbestellung</h1>
+<h1>Rosies Take away</h1>
 <form method = "post">
 <fieldset>
-<h2>Menüauswahl</h2>
+<h2>Menu</h2>
 <p>
-<label for="vSpeise">Vorspeise:</label>
-<select id="vSpeise" name="vSpeise">
+<label for="starter">Starter:</label>
+<select id="starter" name="starter">
 	<option value="salat"
-	<?php if($vSpeise == "salat") {
+	<?php if($starter == "salat") {
 			echo "selected";
-		}?>>Gemischter Salat</option>
-	<option value="rinderbouillon"
-	<?php if($vSpeise == "rinderbouillon") {
+		}?>>Cesar Salad</option>
+	<option value="garlicbread"
+	<?php if($starter == "garlicbread") {
 			echo "selected";
-		}?>>Rinderbouillon</option>
-	<option value="schafskaese"
-	<?php if($vSpeise == "schafskaese") {
+		}?>>Garlic bread</option>
+	<option value="olives"
+	<?php if($starter == "olives") {
 			echo "selected";
-		}?>>Gebackener Schafskäse</option>
+		}?>>Olives</option>
 </select>
 </p>
 <p>
-<label for="hSpeise">Hauptgericht:</label>
-<select id="hSpeise" name="hSpeise">
+<label for="main">Main Dish:</label>
+<select id="main" name="main">
 	<option value="pizza" 
-	<?php if($hSpeise == "pizza") {
+	<?php if($main == "pizza") {
 			echo "selected";
 		}?>>Pizza</option> 
 	<option value="schnitzel" 
-	<?php if($hSpeise =="schnitzel") {
+	<?php if($main =="schnitzel") {
 			echo "selected";
-		}?>>Schnitzel mit Pommes Frites</option>
+		}?>>Schnitzel with fries</option>
 	<option value="risotto" 
-	<?php if($hSpeise =="risotto") {
+	<?php if($main =="risotto") {
 			echo "selected";
-		}?>>Basilikum-Risotto mit Spargel</option>
+		}?>>Risotto</option>
 </select>
 </p>
 <p>
-<label for="nSpeise">Dessert:</label>
-<select id="nSpeise" name="nSpeise">
+<label for="dessert">Dessert:</label>
+<select id="dessert" name="dessert">
 	<option value="pudding" 
-	<?php if($nSpeise == "pudding") {
+	<?php if($dessert == "pudding") {
 			echo "selected";
 		}?>>Pudding</option> 
-	<option value="kuchen" 
-	<?php if($nSpeise == "kuchen") {
+	<option value="cake" 
+	<?php if($dessert == "cake") {
 			echo "selected";
-		}?>>Kuchen</option>
-	<option value="quark" 
-	<?php if($nSpeise == "quark") {
+		}?>>Cake</option>
+	<option value="fruits" 
+	<?php if($dessert == "fruits") {
 			echo "selected";
-		}?>>Quarkspeise mit Obst</option>
+		}?>>Ice cream with fruits</option>
 </select>
 </p>
 <p>
-<label for="getraenk">Getränk:</label>
-<select id="getraenk" name="getraenk">
-	<option value="schorle"
-	<?php if($getraenk == "schorle") {
+<label for="drinks">Drinks:</label>
+<select id="drinks" name="drinks">
+	<option value="lemonade"
+	<?php if($drinks == "lemonade") {
 			echo "selected";
-		}?>>Apfelschorle</option> 
+		}?>>Lemomade</option> 
 	<option value="cola"
-	<?php if($getraenk == "cola") {
+	<?php if($drinks == "cola") {
 			echo "selected";
 		}?>>Coca Cola</option> 
-	<option value="saft"
-	<?php if($getraenk == "saft") {
+	<option value="juice"
+	<?php if($drinks == "juice") {
 			echo "selected";
-		}?>>Fruchtsaft</option>
-	<option value="kaffee"
-	<?php if($getraenk == "kaffee") {
+		}?>>Juice</option>
+	<option value="coffee"
+	<?php if($drinks == "coffee") {
 			echo "selected";
-		}?>>Kaffee</option>
-	<option value="wasser"
-	<?php if($getraenk == "wasser") {
+		}?>>coffee</option>
+	<option value="water"
+	<?php if($drinks == "water") {
 			echo "selected";
-		}?>>Mineralwasser</option>
-	<option value="tee"
-	<?php if($getraenk == "tee") {
+		}?>>Water</option>
+	<option value="tea"
+	<?php if($drinks == "tea") {
 			echo "selected";
-		}?>>Tee</option> 
+		}?>>Tea</option> 
 </select>
 </p>
 </fieldset>	 
 <fieldset>
 <p>
-<input type="radio" id="eigener"
-	name="gastStatus" value="mitarbeiter" <?php
-	if($gastStatus!="gast") {
+<input type="radio" id="employee"
+	name="guestStatus " value="employee" <?php
+	if($guestStatus !="gast") {
 		echo "checked";
 	}?> />
-<label for="eigener">Mitarbeiter</label><br />
-<input type="radio" id="fremd"
-	name="gastStatus" value="gast" <?php
-	if($gastStatus=="gast") {
+<label for="employee">Employee</label><br />
+<input type="radio" id="guest"
+	name="guestStatus " value="guest" <?php
+	if($guestStatus =="guest") {
 		echo "checked";
 	}?> /> 
-<label for="fremd">Gast </label>
+<label for="employee">guest </label>
 
 </p>
 <p>
-<input type = "submit" value="bestellen"/>
+<input type = "submit" value="order"/>
 </p>
 </fieldset>
 </form>

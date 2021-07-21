@@ -119,7 +119,7 @@
     // associative array $GLOBAL
     function addNums(... $num) {
         foreach($num as $value){
-            $GLOBALS[$sumTwo] += $value;
+            $GLOBALS[$num] += $value;
         }
     }
     $sumTwo = 0;
