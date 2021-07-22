@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
     <title>Order Form 1.1</title>
     <?php
     // set the html options items with the value of the chosen dish
@@ -63,6 +64,7 @@
     }
     ?>
 
+    <div id="menuContainer">
         <h1>Menu</h1>
         <h2>Place your order</h2>
         <form action="" method="post">
@@ -115,7 +117,7 @@
                     echo "checked";
                 }?>/>
             </label>
-            </br>
+
             <label for="guest">Costumer
                 <input type="radio" name="guestStatus" id="guest" value="guest"<?php 
                 if($guestStatus == "guest") {
@@ -126,6 +128,7 @@
         </br>
         <button type="submit">Order</button>
     </form>
+    </div>
     
 </body>
 </html>
