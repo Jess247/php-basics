@@ -14,7 +14,7 @@
         ?>
         <form method="post">
             <ul>
-            <!-- defalut behaviour -  only the last item out of a group of checkboxes is stored -->
+            <!-- default behaviour -  only the last item out of a group of checkboxes is stored -->
                 <li>
                     <input type="checkbox" id="cb1" name="cBoxGroup" value="checkbox 1"/>
                     <label for="cb1">Checkbox number 1</label>
