@@ -93,3 +93,11 @@ The word or symbol is used to connect two or more expressions. The result is eit
 "and", "or", "xor", !, &&, ||. 
 
 
+# POST vs. GET
+| Tables                      | GET             | POST             |
+| -------------               |:-------------:  | -----:           |
+| Using return or refresh     | not problematic | sends Data again |
+| Bookmark or favorite        | can be stored   | can't be stored  |
+|                             | using parameters|                  |
+| Cache                       | can be Cached   | can't be Cached  |
+
