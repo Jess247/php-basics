@@ -116,3 +116,5 @@ The word or symbol is used to connect two or more expressions. The result is eit
 # Security
 
 In file unsecure_form.php the user can enter what ever he wants and the browser will output it. This can be really dangerous and can lead to unexpected results. If the user enters a HTML script for example the script will be run and outputted. Try it out by entering some HTML code. Old browser might als run javaScript most new browsers won't allow it. Try it out with some javaScript examples.
+To make it more secure you can mask the special characters. To do this we can use a PHP function named htmlspecialchars().
+Example of the updated version of unsecure_form.php is in secure_form.php
