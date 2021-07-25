@@ -90,14 +90,23 @@ They are used to compare values and return true or false. Operators are ==, ===,
 # Logic Operators
 
 The word or symbol is used to connect two or more expressions. The result is either true or false.
-"and", "or", "xor", !, &&, ||. 
-
+"and", "or", "xor", !, &&, ||.
 
 # POST vs. GET
-| Tables                      | GET                 | POST                    |
-| -------------               |:-------------:      | -----:                  |  
-| Using return or refresh     | not problematic     | sends Data again        |
-| Bookmark or favorite        | can be stored       | can't be stored         |
-|                             | using parameters    |                         |
-| Cache                       | can be Cached       | can't be Cached         |
-| Browser history             | parameters are saved| Parameters aren't saved |
+
+| Tables                  |          GET          |                    POST |
+| ----------------------- | :-------------------: | ----------------------: |
+| Using return or refresh |    not problematic    |        sends Data again |
+| Bookmark or favorite    |     can be stored     |         can't be stored |
+|                         |   using parameters    |                         |
+| Cache                   |     can be Cached     |         can't be Cached |
+| Browser history         | parameters are saved  | Parameters aren't saved |
+| length restrictions     |  max URL-length 4048  |         no restrictions |
+|                         |      characters       |                         |
+| Datatype restrictions   | ASCII characters only |         no restrictions |
+| safety                  |  less save than post  |    a bit saver than get |
+|                         | data is sent via URL  | not saved in URL, chahe |
+|                         |                       |  or browser history and |
+|                         |                       |  not saved in log-files |
+|                         |                       |           of the server |
+| visibility              | adressbar in browser  |  not visible right away |
