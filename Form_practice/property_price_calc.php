@@ -11,15 +11,38 @@
 </head>
 <body> 
 <?php 
+
 $num1 = $_POST["number1"];
 $num2 = $_POST["number2"];
 $num3 = $_POST["number3"];
 
-$mwst = 1.19;
-$prov = $_POST["privision"];
-$provNum = int($prov) / 100;
-function calc() {
-    
+
+$prov = $_POST["provision"];
+function calc($num1, $num2, $num3, $prov) {
+    if(!empty($_POST["mwst"])) {
+        $mwst = 1.19;
+    } else {
+        $mwst = 1;
+    }
+
+
+    $preis = $num1 * $num2 * $num3;
+    $provPr = intval(($preis / 100) * $prov);
+    $nettoPrProv = $preis + $provPr;
+    $result = $nettoPrProv * $mwst;
+    echo "Breite: $num1 m</br>
+          laenge: $num2 m</br>
+          preis qm: $num3 $</br>
+          netto: $preis $ </br>
+          netto prov: $nettoPrProv $ </br>
+          butto:  $result$";
+ 
+}
+
+
+
+if(isset($_POST["number1"])){
+    calc($num1, $num2, $num3, $prov);
 }
     
 ?>
@@ -27,15 +50,15 @@ function calc() {
     <form action="" method="post">
         <p>
             <label for="number1">Zahl 1: </label>
-            <input type="text" name="number1" placeholder="Gib eine Zahl ein..." require>
+            <input type="text" name="number1" value="<?php echo $_POST["number1"]; ?>" placeholder="Gib eine Zahl ein..." require>
         </p>
         <p>
             <label for="number2">Zahl 2: </label>
-            <input type="text" name="number2" placeholder="Gib eine Zahl ein..." require>
+            <input type="text" name="number2" value="<?php echo $_POST["number2"]; ?>" placeholder="Gib eine Zahl ein..." require>
         </p>
         <p>
-            <label for="number2">Zahl 3: </label>
-            <input type="text" name="number2" placeholder="Gib eine Zahl ein..." require>
+            <label for="number3">Zahl 3: </label>
+            <input type="text" name="number3" value="<?php echo $_POST["number3"]; ?>" placeholder="Gib eine Zahl ein..." require>
         </p>
         <p>
         <label for="prov">Provision: </label>
