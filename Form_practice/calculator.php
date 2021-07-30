@@ -38,7 +38,7 @@ if(isset($_POST["operator"])) {
 }
     
 ?>
-    <h1>Bitte geben sie die beiden Zahlen in die Felder ein!</h1>
+    <h3>Bitte geben sie die beiden Zahlen in die Felder ein!</h3>
     <form action="" method="post">
         <p>
             <label for="number1">Zahl 1: </label>

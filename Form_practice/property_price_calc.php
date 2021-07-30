@@ -63,15 +63,53 @@ if(isset($_POST["number1"])){
         <p>
         <label for="prov">Provision: </label>
         <select name="provision" id="prov">
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5</option>
-            <option value="6">6</option>
-            <option value="7">7</option>
+            <option value="3" 
+            <?php if(isset($_POST["provision"])){
+                if($_POST["provision"] == "3"){
+                    echo "selected";
+                }
+            } 
+            ?>>3</option>
+
+            <option value="4" 
+            <?php if(isset($_POST["provision"])){
+                if($_POST["provision"] == "4"){
+                    echo "selected";
+                }
+            } 
+            ?>>4</option>
+
+            <option value="5" 
+            <?php if(isset($_POST["provision"])){
+                if($_POST["provision"] == "5"){
+                    echo "selected";
+                }
+            } 
+            ?>>5</option>
+
+            <option value="6" 
+            <?php if(isset($_POST["provision"])){
+                if($_POST["provision"] == "6"){
+                    echo "selected";
+                }
+            } 
+            ?>>6</option>
+            <option value="7" 
+            <?php if(isset($_POST["provision"])){
+                if($_POST["provision"] == "7"){
+                    echo "selected";
+                }
+            } 
+            ?>>7</option>
         </select>
         </p>
         <p>
-            <input type="checkbox" name="mwst" value="mwst">
+            <input type="checkbox" name="mwst" value="mwst"
+            <?php if(isset($_POST["mwst"])){
+                if($_POST["mwst"] == "mwst"){
+                    echo "checked";
+                }
+            }?>>
             <label for="mwst">MwSt</label>
         </p>
         <p>
