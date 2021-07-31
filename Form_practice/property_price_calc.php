@@ -63,6 +63,7 @@ if(isset($_POST["number1"])){
         <p>
         <label for="prov">Provision: </label>
         <select name="provision" id="prov">
+        <!-- Should be in a function -->
             <option value="3" 
             <?php if(isset($_POST["provision"])){
                 if($_POST["provision"] == "3"){

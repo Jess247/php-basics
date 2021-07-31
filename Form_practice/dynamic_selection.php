@@ -29,6 +29,7 @@
 </head>
 <body>
     <form action="post">
+    <!-- Auswertung fehlt -->
         <p>
         <?php dynAuswahl("dynamisch1", "auswahl1", array("brot", "butter", "Kaese", "wurst"), false) ?>
         </p>
