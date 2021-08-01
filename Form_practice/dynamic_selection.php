@@ -25,6 +25,8 @@
             $ausgabe .= "</select>";
             echo $ausgabe;
         }
+
+        
     ?>
 </head>
 <body>
