@@ -24,20 +24,25 @@
             }
             $ausgabe .= "</select>";
             echo $ausgabe;
+
+            if(isset($_POST[$name])){
+                echo "<h1>&#128526</h1>";
+            }
         }
+
 
         
     ?>
 </head>
 <body>
-    <form action="post">
+    <form method="post">
     <!-- Auswertung fehlt -->
         <p>
-        <?php dynAuswahl("dynamisch1", "auswahl1", array("brot", "butter", "Kaese", "wurst"), false) ?>
+        <?php dynAuswahl("dynamisch1", "auswahl1", array("Brot", "Butter", "Käse", "Wurst"), false) ?>
         </p>
 
         <p>
-        <?php dynAuswahl("dynamisch2", "auswahl2", array("fish", "haenchen", "rind", "schwein"), true) ?>
+        <?php dynAuswahl("dynamisch2", "auswahl2", array("Fish", "Hänchen", "Rind", "Schwein"), true) ?>
         </p>
         <p>
             <input type="submit" value="send">
