@@ -31,11 +31,11 @@ function calc($num1, $num2, $num3, $prov) {
     $nettoPrProv = $preis + $provPr;
     $result = $nettoPrProv * $mwst;
     echo "Breite: $num1 m</br>
-          laenge: $num2 m</br>
-          preis qm: $num3 $</br>
-          netto: $preis $ </br>
-          netto prov: $nettoPrProv $ </br>
-          butto:  $result$";
+          Länge: $num2 m</br>
+          Preis pro qm: $num3 €</br>
+          Netto Preis: $preis €</br>
+          netto mit Provision: $nettoPrProv € </br>
+          Bruttopreis:  $result €";
  
 }
 
