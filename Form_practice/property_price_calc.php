@@ -33,8 +33,8 @@ function calc($num1, $num2, $num3, $prov) {
     echo "Breite: $num1 m</br>
           Länge: $num2 m</br>
           Preis pro qm: $num3 €</br>
-          Netto Preis: $preis €</br>
-          netto mit Provision: $nettoPrProv € </br>
+          Nettopreis: $preis €</br>
+          Nettopreis mit Provision: $nettoPrProv € </br>
           Bruttopreis:  $result €";
  
 }

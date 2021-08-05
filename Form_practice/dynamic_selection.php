@@ -8,11 +8,11 @@
 
     <?php
         function dynAuswahl($id, $name, $options, $multiple){
-            $ausgabe = "<select id='$id' name='$name'";
+            $ausgabe = "<select id='$id' name='$name";
             if($multiple){
-                $ausgabe .= "size =".count($options)." multiple>\n";
+                $ausgabe .= "[]' size =".count($options)." multiple>\n";
             } else {
-                $ausgabe .= ">\n";
+                $ausgabe .= "'>\n";
             }
             for($i = 0; $i < count($options); $i++){
                 $ausgabe .= "\t<option value='$options[$i]'>$options[$i]</option>\n";
@@ -24,10 +24,7 @@
             }
             $ausgabe .= "</select>";
             echo $ausgabe;
-
-            if(isset($_POST[$name])){
-                echo "<h1>&#128526</h1>";
-            }
+           
         }
 
 
