@@ -7,27 +7,27 @@
 
         // methods to initialize
         public function initialize($standard) {
-            $this->$speed = $standard;
+            $this->speed = $standard;
         }
 
         // break
         public function brake($changes) {
-            if($this->$speed - $change < 0) {
-                $this->$speed = 0;
+            if($this->speed - $change < 0) {
+                $this->speed = 0;
             }
             else {
-                $this->$speed - $change;
+                $this->speed - $change;
             }
         }
 
         // accelerate
         public function accelerate($change) {
-            $this->$speed = $this->$speed + $change;
+            $this->speed = $this->speed + $change;
         }
 
         // output current speed
         public function output() {
-            echo "The current speed is ". $this->$speed .": ";
+            echo "The current speed is ". $this->speed .": ";
         }
     }
 
