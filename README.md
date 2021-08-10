@@ -118,3 +118,13 @@ The word or symbol is used to connect two or more expressions. The result is eit
 In file unsecure_form.php the user can enter what ever he wants and the browser will output it. This can be really dangerous and can lead to unexpected results. If the user enters a HTML script for example the script will be run and outputted. Try it out by entering some HTML code. Old browser might als run javaScript most new browsers won't allow it. Try it out with some javaScript examples.
 To make it more secure you can mask the special characters. To do this we can use a PHP function named htmlspecialchars().
 Example of the updated version of unsecure_form.php is in secure_form.php
+
+# Classes
+
+A class definition begins with the keyword class.
+To access the attributes and methods you need to use the -> operator.
+Within the class a special variable named $this is used to access the attribute or method. $this acts as a reference to the object.
+The operator new is used to create an instance of an object.
+There are three different access modifiers called public, protected and private. They set the accessability of the members ob a class.
+Attribute values should be set as setter and getter methods (getValue/setValue)
+When an object is initialized the constructor method is called. When it's destroyed the destructor method is called.
