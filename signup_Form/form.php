@@ -6,6 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <title>Sign up</title>
+
+    <?php
+        if(isset($_POST["color_picker"])) {
+            echo $_POST["color_picker"];
+        }
+    ?>
 </head>
 <body>
     <div class="container">
@@ -15,15 +21,15 @@
             <div class="textfield_container">
                 <p class="textfields">
                     <label for="fname">First name: </label><br/>
-                    <input type="text" name="fname" id="fname" placeholder="Plese enter your first name..." require>
+                    <input type="text" name="fname" id="fname" placeholder="Please enter your first name..." require>
                 </p>
                 <p class="textfields">
                     <label for="surname"> Surname: </label><br/>
-                    <input type="text" name="surname" id="surname" placeholder="Plese enter your surname..." require>
+                    <input type="text" name="surname" id="surname" placeholder="Please enter your surname..." require>
                 </p>
                 <p class="textfields">
                     <label for="email"> Email address: </label><br/>
-                    <input type="email" name="email" id="email" placeholder="Plese enter your email..." require>
+                    <input type="email" name="email" id="email" placeholder="Please enter your email..." require>
                 </p>
                 <p class="textfields">
                     <label for="bio"> Bio: </label><br/>
