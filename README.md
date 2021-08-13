@@ -128,3 +128,8 @@ The operator new is used to create an instance of an object.
 There are three different access modifiers called public, protected and private. They set the accessability of the members ob a class.
 Attribute values should be set as setter and getter methods (getValue/setValue)
 When an object is initialized the constructor method is called. When it's destroyed the destructor method is called.
+
+# Autoload
+
+The autoload() function in file autoload.inc.php is very useful especially when multiple classes are in different files.
+Instead of including all the files with these classes only the autoload file can be added.
