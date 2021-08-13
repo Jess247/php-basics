@@ -133,3 +133,5 @@ When an object is initialized the constructor method is called. When it's destro
 
 The autoload() function in file autoload.inc.php is very useful especially when multiple classes are in different files.
 Instead of including all the files with these classes only the autoload file can be added.
+Auto load can be problematic because there can be only one function with this name.
+This problem can be solved by registering our custom autoload function with spl_autoload_register(). (customautoload.php)
