@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inheritance</title>
     <?php
-        // includes the car class from another file
-        include_once("car_class.php");
+        // includes the car class from another file with autoload function
+        include_once("autoload.inc.php");
     ?>
 </head>
 <body>
@@ -24,7 +24,7 @@
                 $this->maxSpeed = $value;
             }
             public function getMaxSpeed() {
-               return $this->maxSpeed;
+                return $this->maxSpeed;
             }
 
             public function output() {
