@@ -6,8 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inheritance</title>
     <?php
-        // includes the car class from another file with autoload function
-        include_once("autoload.inc.php");
+        // includes the car class from another file with autoload function (magic function)
+        // include_once("autoload.inc.php"); 
+
+        // includes custom autoload function
+        include_once("myautoload.php");
     ?>
 </head>
 <body>
