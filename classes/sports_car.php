@@ -37,7 +37,7 @@
             }
         }
         // initializing a new object
-        $audi = new SportsCar(250);
+        $audi = new SportsCar(250, true, false);
         $audi->setMaxSpeed(279);
         $audi->output();
     ?>

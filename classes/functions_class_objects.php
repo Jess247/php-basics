@@ -38,7 +38,7 @@ print_r($attributes);
 // -----------------------------------------------------------
 
 // get all declared classes in an array
-$audi = new SportsCa(250, 301, false, true);
+$audi = new SportsCar(250, 301, false, true);
 $jeep = new FourWheelDrive(75);
 $trailer = new Trailer();
 

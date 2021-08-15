@@ -12,11 +12,11 @@
 
         // break
         public function brake($changes) {
-            if($this->speed - $change < 0) {
+            if($this->speed - $changes < 0) {
                 $this->speed = 0;
             }
             else {
-                $this->speed - $change;
+                $this->speed - $changes;
             }
         }
 
