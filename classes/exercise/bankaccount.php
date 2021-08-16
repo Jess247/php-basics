@@ -22,12 +22,12 @@
             $this->kontoinhaber = $inhaber;
 
             echo "Neues Konto wurde erfolgreich erstellt.".$this->kontonummer." <br/>";
+            echo "Der aktuelle Kontostand des Kontos ".$this->kontonummer." beträgt: ".$this->kontostand."€ <br/>";
         }
 
         // Setter- und Getter-Methoden
         function setKontonr($kontonr){
             $this->kontonummer = $kontonr;
-            echo "Konto ".$this->kontonummer ."erstellt.<br/>";
         }
         
         function getKontonr(){
@@ -36,7 +36,6 @@
 
         function setKontostnd($kontostnd){
             $this->kontostand = $kontostnd;
-            echo "Ihre balance ist: <br/>". $this->kontostand;
         }
         
         function getKontostnd(){
@@ -45,7 +44,6 @@
 
         function setKontoinhab($inhaber){
             $this->kontoinhaber = $inhaber;
-            echo "Kontoinhaber: ". $this->kontoinhaber;
         }
         
         function getKontoinhab(){
@@ -57,12 +55,12 @@
         // Abheben
         function abheben($amount){
             $this->kontostand -= $amount;
-            echo "Abbuchung erfolgreich, ihre balance ist: ".$this->kontostand." euro <br/>";
+            echo "Abbuchung erfolgreich, ihre balance ist: " .$this->kontostand. "€ <br/>";
         }
 
         function einzahlen($amount){
             $this->kontostand += $amount;
-            echo "Abbuchung erfolgreich, ihre balance ist: ".$this->kontostand." euro <br/>";
+            echo "Einzahlung erfolgreich, ihre balance ist: " .$this->kontostand. "€ <br/>";
         }
 
        
