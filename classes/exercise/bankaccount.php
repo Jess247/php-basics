@@ -9,7 +9,7 @@
 <body>
     <?php
     class Konto {
-        // attributes
+        // Attribute
         private $kontonummer;
         private $kontostand;
         private $kontoinhaber;
@@ -21,8 +21,9 @@
             $this->kontostand = $kontostnd;
             $this->kontoinhaber = $inhaber;
 
-            echo "Neues Konto wurde erfolgreich erstellt.".$this->kontonummer." <br/>";
-            echo "Der aktuelle Kontostand des Kontos ".$this->kontonummer." beträgt: ".$this->kontostand."€ <br/>";
+            echo "Konto: ".$this->kontonummer ." wurde erfolgreich erstellt.<br/>\n\t";
+            echo "Kontoinhaber: ".$this->kontoinhaber ."<br/>\n\t";
+            echo "Kontostand: ".$this->kontostand ."€<br/>\n\t";
         }
 
         // Setter- und Getter-Methoden
@@ -54,20 +55,31 @@
 
         // Abheben
         function abheben($amount){
-            $this->kontostand -= $amount;
-            echo "Abbuchung erfolgreich, ihre balance ist: " .$this->kontostand. "€ <br/>";
+            if($this->kontostand >= $amount){
+                $this->kontostand -= $amount;
+                echo "Der Betrag wurde abgehoben. Neuer Kontostand auf ".$this->kontonummer.": " .$this->kontostand. "€ <br/>\n\t";
+            } else {
+                echo "ungültiger oder zu großer Betrag. Buchung wurde nicht ausgeführt<br/>\n\t";
+            }
+            
         }
 
         function einzahlen($amount){
             $this->kontostand += $amount;
-            echo "Einzahlung erfolgreich, ihre balance ist: " .$this->kontostand. "€ <br/>";
+            echo "Der Betrag wurde auf das Konto eingezahlt. Neuer Kontostand auf ".$this->kontonummer.": " .$this->kontostand. "€ <br/>\n\t";
         }
 
        
     }
-
-    $customer1 = new Konto('12345', 345, "Klaus, Mueller");
+    // instanzen
+    $customer1 = new Konto('52637491', 345, "Klaus, Müller");
     $customer1->abheben(100);
+    $customer1->einzahlen(55);
+
+    $customer2 = new Konto('57483627', 987, "Max, Mustermann");
+    $customer2->abheben(1000);
+    $customer2->einzahlen(555);
+
   
     ?>
 </body>
