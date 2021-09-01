@@ -26,12 +26,12 @@
         <section>
             <h1>Make transactions:</h1>
         </section>
-        <form action="">
-            <label for="name">Kontoinhaber: <input type="text" placeholder="Maggie Miller" required></label>
-            <label for="accoutnum">Accountnumber:<input type="text" placeholder="1234567890" required></label>
-            <label for="withdraw">Withdraw: <input type="radio"></label>
-            <label for="withdraw">Deposit: <input type="radio"></label>
-            <label for="amount"><input type="text" placeholder="100€"></label>
+        <form action="bankaccount.class.php" method="post">
+            <label for="name">Accountholder: <input name="holder" type="text" placeholder="Enter full name..." required></label><br/>
+            <label for="accoutnum">Accountnumber:<input name="accnum" type="text" placeholder="enter accountnumber..." required></label><br/>
+            <label for="withdraw">Withdraw: <input name="action" value="withdraw" type="radio"></label>
+            <label for="deposit">Deposit: <input name="action" value="deposit" type="radio"></label><br/>
+            <label for="amount"><input name="amount" type="text" placeholder="Enter amount.."></label>
             <button type="submit">Submit</button>
         </form>
         <section>
