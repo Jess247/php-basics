@@ -83,11 +83,11 @@ class Account {
  if(isset($_POST["action"])) {
      if($action == "withdraw"){
         $sum = $defaultBal - $actionAmount;
-             echo "Your balance is <br/>".$sum;
+             echo "You withdrew $actionAmount. Your balance is now: ".$sum."<br/>";
      } 
      else{
         $sum = $defaultBal + $actionAmount;
-             echo "Your balance is <br/>".$sum;
+             echo "You deposited $actionAmount. Your balance is:".$sum."<br/>";
      } 
     }
     
