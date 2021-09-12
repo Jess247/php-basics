@@ -72,7 +72,7 @@ class Account {
     }
  
 }
-
+// Output needs styles and another layout
  // variables
  $name = $_POST["holder"];
  $number = $_POST["accnum"];
